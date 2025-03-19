@@ -18,9 +18,9 @@ export default function LandingPage() {
       <div className="text-center">
         {/* Header with Gradient */}
         <ZamsLogo></ZamsLogo>
-        <h1 className="mt-4 text-left text-3xl font-semibold">
+        <h1 className="mt-4 text-left text-3xl font-sherpa font-bold leading-44px] tracking-[-0.25px]">
           Hey there, <br></br>
-          What’d you like to{" "}ask today
+          What’d you like to ask today?
         </h1>
 
         {/* Input Section */}

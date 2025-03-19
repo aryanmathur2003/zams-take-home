@@ -121,3 +121,23 @@
     @apply bg-background text-foreground;
   }
 }
+
+@font-face {
+  font-family: 'GD Sherpa';
+  src: url('/fonts/GDSherpa-Bold.woff2') format('woff2'),
+       url('/fonts/GDSherpa-Bold.woff') format('woff'),
+       url('/fonts/GDSherpa-Bold.ttf') format('truetype');
+  font-weight: 700; /* Adjust based on the font file's weight */
+  font-style: normal;
+}
+
+.font-sherpa {
+  font-family: 'GD Sherpa', sans-serif;
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: -0.25px;
+  font-weight: 700;
+}
+
+
+
