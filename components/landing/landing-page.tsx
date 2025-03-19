@@ -1,4 +1,4 @@
-// components/LandingPage.tsx
+// components/Landin gPage.tsx
 'use client'
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
@@ -19,40 +19,27 @@ export default function LandingPage() {
         {/* Header with Gradient */}
         <ZamsLogo></ZamsLogo>
         <h1 className="mt-4 text-left text-3xl font-sherpa font-bold leading-44px] tracking-[-0.25px]">
-          Hey there, <br></br>
-          What’d you like to ask today?
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#070608] to-[#B7549B]">Hey there,</span><br></br>
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#070608] via-[#B7549B] via-60% to-[#5E49DB]">What’d you like to ask today?</span>
         </h1>
 
-        {/* Input Section */}
-        <div className="mt-6 w-full max-w-xl space-y-4">
+        <div className="relative w-full sm:w-[90%] md:w-[700px] lg:w-[800px] xl:w-[909px] mt-6"> 
           <Input
             type="text"
-            placeholder="Ask whatever you want..."
             value={input}
             onChange={(e) => setInput(e.target.value)}
-            className="p-4 border border-gray-300 rounded-lg shadow-sm"
+            placeholder="Ask whatever you want.."
           />
-          
-          <div className="flex justify-between items-center">
-            {/* Dropdown */}
-            <select className="p-2 border border-gray-300 rounded-lg">
-              <option>Response Type</option>
-              <option>Quick</option>
-              <option>Detailed</option>
-            </select>
-
-            {/* Submit Button */}
-            <Button onClick={handleSubmit} className="bg-blue-500 text-white hover:bg-blue-600">
-              Submit
-            </Button>
-          </div>
         </div>
 
+
         {/* Disclaimer */}
-        <p className="mt-4 text-sm text-gray-500">
-          Your chats aren’t used to train our models. AI may make mistakes, so please double-check.
-        </p>
+
       </div>
+      <p className="absolute bottom-2 left-0 right-0 mx-auto text-center text-sm text-gray-500">
+        Your chats aren’t used to train our models. AI may make mistakes, so please double-check.
+      </p>
     </div>
+
   )
 }
