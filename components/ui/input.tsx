@@ -7,6 +7,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select"
+import Feather from "../landing/feather"
 
 function Input({ className, type, ...props }: React.ComponentProps<"input">) {
   return (
@@ -31,7 +32,7 @@ function Input({ className, type, ...props }: React.ComponentProps<"input">) {
             <SelectValue placeholder="Theme" />
           </SelectTrigger>
           <SelectContent>
-            <SelectItem value="light">Light</SelectItem>
+            <SelectItem value="light"><Feather></Feather>Response Type</SelectItem>
             <SelectItem value="dark">Dark</SelectItem>
             <SelectItem value="system">System</SelectItem>
           </SelectContent>
