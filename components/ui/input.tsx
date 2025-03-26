@@ -29,10 +29,11 @@ function Input({ className, type, ...props }: React.ComponentProps<"input">) {
       <div className="absolute left-2 bottom-2 w-[160px]">
         <Select>
           <SelectTrigger className="w-full h-10 text-base">
-            <SelectValue placeholder="Theme" />
+          <Feather></Feather>
+            <SelectValue placeholder="Response Type" />
           </SelectTrigger>
           <SelectContent>
-            <SelectItem value="light"><Feather></Feather>Response Type</SelectItem>
+            <SelectItem value="light">Response Type</SelectItem>
             <SelectItem value="dark">Dark</SelectItem>
             <SelectItem value="system">System</SelectItem>
           </SelectContent>
